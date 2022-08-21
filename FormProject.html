@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student Registration Form</title>
+  </head>
+  <body>
+    <h2>Student Registration Form</h2>
+    <form>
+      <label for="Name">Name</label>
+      <!-- required and placeholder -->
+      <input type="text" name="Name" required placeholder="Enter Your Name"><br><br>
+      <label for="Email">Email</label>
+      <!-- email -->
+      <input type="email" name="Email" required placeholder="abc@mal.com"><br><br>
+      <label for="RollNo">Roll#</label>
+      <input type="number" name="RollNo" required placeholder="Enter Your Roll #"><br><br>
+      <!-- Calander input with min and max-->
+      <label for="DOB">Date Of Birth</label>
+      <input type="date" name="DOB" required min="1980-11-01" max="2020-11-01"
+      /><br /><br />
+      <!-- Radio button -->
+      <label for="Gender">Gender</label>
+      <input type="radio" name="Gender">Male
+      <input type="radio" name="Gender">Female
+      <input type="radio" name="Other">Other<br><br>
+      <label for="MobNumber">Mobile Number</label>
+      <input type="tel" name="MobNumber" required placeholder="Mobile"><br><br>
+      <!-- Textarea  -->
+      <label for="Address">Address</label>
+      <textarea rows="1" cols="40" name="Address" required placeholder="Address"></textarea><br><br>
+      <!-- dropdown -->
+      <label for="City">City</label>
+      <select>
+        <option value="Delhi">Delhi</option>
+        <option value="Noida">Noida</option>
+        <option value="GGN">Gurugram</option>
+      </select>
+      <!-- number -->
+      <label for="PIN">Pin Code</label>
+      <input type="number"><br><br>
+      <label>Please Select Your Qualifications</label>
+      <!-- Checkbox -->
+      <input type="checkbox">10th <input type="checkbox" />12th
+      <input type="checkbox">Graduation
+      <input type="checkbox">Post-Graduation<br><br>
+      <label for="Course">Select Your Course Choices</label><br><br>
+      <input type="checkbox">HTML<br>
+      <input type="checkbox">JavaScript<br>
+      <input type="checkbox">Python<br>
+      <input type="checkbox">SQL<br><br>
+      <label for="rating">Please Rate Course on a Scale of 1-5:</label><br>
+      <input type="checkbox">1
+      <input type="checkbox">2
+      <input type="checkbox">3
+      <input type="checkbox">4
+      <input type="checkbox">5<br><br>
+      <label for="suggestions">Suggestions for Improvements</label><br>
+      <textarea rows="2" cols="50" name="suggestions"></textarea><br><br>
+      <!-- submit  -->
+      <input type="submit" onclick="alert('Form Submitted Successfully')">
+    </form>
+  </body>
+</html>
